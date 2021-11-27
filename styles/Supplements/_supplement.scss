@@ -1,0 +1,53 @@
+.supplement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 50px 150px;
+}
+
+.path {
+  font-family: Montserrat, serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: $black;
+}
+
+.path-slug {
+  color: $grey;
+}
+
+.supplement-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.supplement-information {
+  width: 100%;
+}
+
+.vertical-line {
+  content: '';
+  color: $black;
+  height: 550px;
+  margin: 40px;
+  border-left: 1px solid $grey;
+}
+
+.supplement-title {
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 80px;
+  color: $black;
+  text-align: end;
+}
+
+.supplement-description {
+  font-family: Hind, serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: $grey;
+  text-align: end;
+  padding: 10px;
+}
