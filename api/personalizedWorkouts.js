@@ -80,29 +80,24 @@ export const PHUL = [
 				],
 			},
 			day5: {
-				targetMuscleGroup: 'Upper Body',
+				targetMuscleGroup: 'Lower Body',
 				trainingType: 'Hypertrophy',
 				excersises: [
 					{
-						excersiseName: 'Incline Barbell Bench Press',
+						excersiseName: 'Front Squat',
 						sets: '3-4',
 						reps: '8-12',
 					},
 					{
-						excersiseName: 'Flat Bench Dumbell Fly',
+						excersiseName: 'Barbell Lunge',
 						sets: '3-4',
 						reps: '8-12',
 					},
-					{ excersiseName: 'Seated Cable Row', sets: '3-4', reps: '8-12' },
-					{ excersiseName: 'One Arm Dumbell Row', sets: '3-4', reps: '8-12' },
-					{ excersiseName: 'Dumbell Lateral Raise', sets: '3-4', reps: '8-12' },
+					{ excersiseName: 'Leg Extension', sets: '3-4', reps: '10-15' },
+					{ excersiseName: 'Leg Curl', sets: '3-4', reps: '10-15' },
+					{ excersiseName: 'Seated Calf Raise', sets: '3-4', reps: '8-12' },
 					{
-						excersiseName: 'Seated Incline Dumbell Curl',
-						sets: '3-4',
-						reps: '8-12',
-					},
-					{
-						excersiseName: 'Cable Tricep Extension',
+						excersiseName: 'Calf Press',
 						sets: '3-4',
 						reps: '8-12',
 					},
