@@ -14,8 +14,6 @@ export default function Home() {
 		setRecept1(await funkcija('soup'));
 	}, []);
 
-	console.log(recept1);
-
 	return (
 		<>
 			<Header />
