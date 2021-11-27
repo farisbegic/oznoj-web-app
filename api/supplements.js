@@ -41,6 +41,7 @@ export const supplementData = [
 	},
 	{
 		id: '0005',
+		img: 'https://www.bionovastore.com/assets/product/large/product_19_1116.jpg',
 		name: 'Calcium',
 		desc: 'Important for strong bones and teeth.Used when an individual experiences muscle difficulties (pain, convulsions), and is suffering from conditions related to muscles (e.g. osteoporosis) ',
 		childrenDosage: '700000mcg',
@@ -51,6 +52,7 @@ export const supplementData = [
 	{
 		id: '0006',
 		name: 'Magnesium',
+		img: 'https://www.rockethealth.shop/wp-content/uploads/2020/12/magnesium-tablets.jpg',
 		desc: 'Used for regulation of nerve and muscle cells; maintaining blood pressure and functionality of the whole body.',
 		childrenDosage: '110000mcg',
 		adultDosage: '400000 mcg',
@@ -59,6 +61,7 @@ export const supplementData = [
 	},
 	{
 		id: '0007',
+		img: 'https://i.ebayimg.com/images/g/DAUAAOSwo2BgEfLe/s-l640.jpg',
 		name: 'Potassium',
 		desc: '/',
 		childrenDosage: '2.3 g',
@@ -68,6 +71,7 @@ export const supplementData = [
 	},
 	{
 		id: '0008',
+		img: 'https://cdn1.evitamins.com/images/products/Optimum_Nutrition/18851/500/18851_front2020.jpg',
 		name: 'Creatine',
 		desc: '/',
 		childrenDosage: '0g',
@@ -77,6 +81,7 @@ export const supplementData = [
 	},
 	{
 		id: '0009',
+		img: 'https://gymbeam.hr/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/g/o/gold_titulna.png',
 		name: 'Whey Protein',
 		desc: '/',
 		childrenDosage: '0g',
