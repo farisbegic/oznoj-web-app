@@ -55,4 +55,20 @@ export const supplementData = [
 		foodSources:
 			'Many different fruits, vegetables, meats, and dairy foods contain potassium. Foods high in potassium include dried apricots, lentils, and potatoes. Adults get a lot of their potassium from milk, coffee, tea, and other nonalcoholic beverages.',
 	},
+	{
+		name: 'Creatine',
+		desc: '/',
+		childrenDosage: '0g',
+		adultDosage: '3g',
+		foodSources:
+			'Many different fruits, vegetables, meats, and dairy foods contain potassium. Foods high in potassium include dried apricots, lentils, and potatoes. Adults get a lot of their potassium from milk, coffee, tea, and other nonalcoholic beverages.',
+	},
+	{
+		name: 'Whey Protein',
+		desc: '/',
+		childrenDosage: '0g',
+		adultDosage: '1.8g/kg bodymass',
+		foodSources:
+			'Muscle protein synthesis is the underlying process that is driving muscle growth.',
+	},
 ];
