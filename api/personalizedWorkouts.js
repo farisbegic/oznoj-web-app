@@ -1,6 +1,8 @@
-export const PHUL = [
+export const workouts = [
 	{
 		aboutTheProgram: {
+			name: 'PHUL',
+			id: '0001',
 			goal: 'Build Muscle & Strength',
 			workoutType: 'Split',
 			trainingLevel: 'Intermediate',
