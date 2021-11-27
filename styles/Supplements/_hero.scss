@@ -1,0 +1,27 @@
+.supplements-hero {
+  background-color: $light-blue;
+  border-radius: 47px;
+  margin: 50px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 70px;
+}
+
+.hero-left {
+  width: 38%;
+}
+
+.hero-heading {
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: $black;
+}
+
+.hero-text {
+  font-family: Hind, serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: $black;
+}
