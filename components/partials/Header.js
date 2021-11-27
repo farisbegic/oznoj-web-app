@@ -31,8 +31,8 @@ const Header = () => {
 				<Link href='/workoutplans'>
 					<a className='nav-link'>Tailored Workout Plans</a>
 				</Link>
-				<Link href='/recepies'>
-					<a className='nav-link'>Recepies</a>
+				<Link href='/mealplans'>
+					<a className='nav-link'>Meal Plans</a>
 				</Link>
 				<Button filled='false' />
 			</ul>
