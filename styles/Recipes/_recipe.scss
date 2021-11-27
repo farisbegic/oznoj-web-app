@@ -1,0 +1,108 @@
+.supplement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 50px 150px;
+}
+
+.path {
+  font-family: Montserrat, serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: $black;
+}
+
+.path-slug {
+  color: $grey;
+}
+
+.supplement-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.supplement-information {
+  width: 80%;
+}
+
+.vertical-line {
+  content: '';
+  color: $black;
+  height: 550px;
+  margin: 40px;
+  border-left: 1px solid $grey;
+}
+
+.supplement-title {
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 80px;
+  color: $blue;
+  line-height: 75px;
+  text-align: end;
+}
+
+.recipe-times {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  text-align: end;
+  padding: 40px 0;
+}
+
+.recipe-time {
+  font-family: Hind, serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: $black;
+}
+
+.supplement-details-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 0;
+  padding: 30px 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+}
+
+.recipe-ingredient-title, .nutrient-ingredient-title {
+  font-family: Hind, serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: $blue;
+}
+
+.recipe-ingredient, .nutrient-ingredient, .instruction-text {
+  font-family: Hind, serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: $black;
+}
+
+.recipe-instructions {
+  margin: 40px 0;
+}
+
+.instruction-header {
+  font-family: Hind, serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: $blue;
+}
+
+.instruction-line {
+  color: $grey;
+}
+
+.instruction-list {
+  margin: 30px 0;
+}
+
+.instruction-text {
+  margin-left: 13px;
+}
