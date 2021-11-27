@@ -1,0 +1,19 @@
+.empty-btn {
+  border: 3px solid $blue;
+  border-radius: 31px;
+  padding: 7px 35px;
+  background-color: $white;
+  color: $blue;
+  font-family: Hind, serif;
+  font-weight: normal;
+}
+
+.filled-btn {
+  border: none;
+  border-radius: 31px;
+  padding: 10px 38px;
+  background-color: $blue;
+  color: $white;
+  font-family: Hind, serif;
+  font-weight: normal;
+}
