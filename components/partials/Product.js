@@ -8,7 +8,7 @@ const Product = (props) => {
 				<img alt='sups' src={props.img} width='192px' height='171px' />
 				<h5 className='product-card-heading'>{props.name}</h5>
 				<p className='product-card-text'>{props.foodSources}</p>
-				<Link href='/'>
+				<Link href={`/supplements/${props.id}`}>
 					<a className='supplement-link'>Read More</a>
 				</Link>
 			</div>

@@ -1,22 +1,22 @@
 import React from 'react';
 import {useRouter} from "next/router";
-import Image from "next/image";
+import Link from 'next/link';
+import { supplementData } from "../../api/supplements";
 
 const Supplement = () => {
     const router = useRouter();
     const { query } = router;
+    const supplement = supplementData.filter((supplement) => supplement.id === query.slug);
+    console.log(supplement[0]);
     return (
         <div className="supplement">
-            <h4 className="path">Home / Supplements / <span className="path-slug">{query.slug}</span></h4>
+            <h4 className="path"><Link href="/"><a className="path">Home</a></Link> / <Link href="/supplements"><a className="path">Supplements</a></Link> / <span className="path-slug">{supplement[0].name}</span></h4>
             <div className="supplement-details">
-                <Image src="/vitamin-d.png" height="813px" width="813px"/>
-                <div className="vertical-line"></div>
+                <img src={`${supplement[0].img}`} alt="" style={{height: "500px"}}/>
+                <div className="vertical-line"/>
                 <div className="supplement-information">
-                    <h1 className="supplement-title">Vitamin D</h1>
-                    <p className="supplement-description">Vitamin D is required to promote calcium absorption, which helps to maintain healthy bones and teeth.
-                        Vitamin D also supports a healthy immune system. The Vitamin D3 in this product is the same form produced by the body when our skin is exposed to sunlight.
-                        As we age, our bodies may produce this important nutrient less efficiently.
-                        This formulation is offered in oil-based softgels to promote optimal absorption and assimilation.</p>
+                    <h1 className="supplement-title">{supplement[0].name}</h1>
+                    <p className="supplement-description">{supplement[0].desc}</p>
 
                 </div>
             </div>
