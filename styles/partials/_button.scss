@@ -6,6 +6,12 @@
   color: $blue;
   font-family: Hind, serif;
   font-weight: normal;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+    transition: 0.4s ease-in;
+  }
 }
 
 .filled-btn {
