@@ -1,6 +1,6 @@
 var axios = require('axios').default;
 
-var getAllExcersises = {
+var options = {
 	method: 'GET',
 	url: 'https://exercisedb.p.rapidapi.com/exercises',
 	headers: {
@@ -9,15 +9,11 @@ var getAllExcersises = {
 	},
 };
 
-const fetchAllExcersises = () => {
-	axios
-		.request(getAllExcersises)
-		.then(function ({ data }) {
-			return data;
-		})
-		.catch(function (error) {
-			console.error(error);
-		});
-};
-
-fetchAllExcersises();
+export const allExcercises = axios
+	.request(options)
+	.then(function (response) {
+		return response.data;
+	})
+	.catch(function (error) {
+		console.error(error);
+	});
