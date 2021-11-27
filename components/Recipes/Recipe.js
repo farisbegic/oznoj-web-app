@@ -7,7 +7,7 @@ const Recipe = () => {
     const { query } = router;
     return (
         <div className="supplement">
-            <h4 className="path">Home / Supplements / <span className="path-slug">{query.slug}</span></h4>
+            <h4 className="path">Home / Recipes / <span className="path-slug">{query.slug}</span></h4>
             <div className="supplement-details">
                 <Image src="/vitamin-d.png" height="813px" width="813px"/>
                 <div className="vertical-line"/>
@@ -44,6 +44,15 @@ const Recipe = () => {
                         <li className="nutrient-ingredient">Cholesterol: 56.5mg</li>
                     </ul>
                 </div>
+            </div>
+            <div className="recipe-instructions">
+                <h4 className="instruction-header">Instructions</h4>
+                <hr className="instruction-line"/>
+                <ol className="instruction-list">
+                    <li className="instruction-text">In a stockpot, melt butter over medium heat. Cook onion in butter until softened. Stir in broccoli, and cover with chicken broth. Simmer until broccoli is tender, 10 to 15 minutes</li>
+                    <li className="instruction-text">Reduce heat, and stir in cheese cubes until melted. Mix in milk and garlic powder.</li>
+                    <li className="instruction-text">In a small bowl, stir cornstarch into water until dissolved. Stir into soup; cook, stirring frequently, until thick.</li>
+                </ol>
             </div>
         </div>
     );
