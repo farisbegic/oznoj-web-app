@@ -21,6 +21,8 @@ export const PHUL = [
 			day1: {
 				targetMuscleGroup: 'Upper Body',
 				trainingType: 'Power',
+				description:
+					'The PHUL workout is based around the basic principles of strength and size.  This 4 day program will allow you to maximize results on both fronts in an easy adaptable routine built off the following principles: Frequency. Studies have shown muscle protein synthesis (MPS) to be elevated for up to 48 hours after training. That would make it ideal for you to hit each muscle more frequently than a typical once per week split. The PHUL program is designed to hit each muscle group twice within a week. Compounds. The PHUL program focuses on the big compound movements for optimal progression. While isolation movements are included in this program as well, the main goal is to increase performance on the main lifts, as well as pack on pounds of muscle.  Power. This program uses 2 of its 4 working days to focus on pure strength training. The key to getting stronger and bigger is to utilize progressive overload and time under tension. These 2 days will see that you will be able to use more weight on your hypertrophy days. Hypertrophy. In addition to 2 power days, your other 2 days on the PHUL program will focus on hypertrophy (bodybuilding) style training. This way, not only will you be seeing strength increases but you will be building size as well.',
 				excersises: [
 					{ excersiseName: 'Barbell Bench Press', sets: '3-4', reps: '3-5' },
 					{
