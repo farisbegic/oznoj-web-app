@@ -3,10 +3,24 @@
   justify-content: space-between;
   align-items: center;
   padding: 50px 150px;
+
+  @media screen and (max-width: 815px){
+    padding: 30px 50px;
+  }
+}
+
+.hero-img {
+  @media screen and (max-width: 1150px) {
+    width: 40%;
+  }
 }
 
 .hero-left {
   width: 30%;
+
+  @media screen and (max-width: 1150px){
+    width: 50%;
+  }
 }
 
 .hero-heading {
@@ -14,6 +28,18 @@
   font-weight: 600;
   font-size: 55px;
   color: $black;
+
+  @media screen and (max-width: 1150px){
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 815px){
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 600px){
+    font-size: 25px;
+  }
 }
 
 .hero-text {
@@ -22,4 +48,9 @@
   font-size: 15px;
   color: $black;
   margin: 30px 0;
+
+  @media screen and (max-width: 815px){
+    font-size: 11px;
+  }
+
 }

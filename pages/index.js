@@ -5,12 +5,12 @@ import Join from "../components/Home/Join";
 import Footer from "../components/partials/Footer";
 export default function Home() {
   return (
-      <div>
+      <>
         <Header />
           <Hero />
           <Services />
           <Join />
           <Footer />
-      </div>
+      </>
   )
 }

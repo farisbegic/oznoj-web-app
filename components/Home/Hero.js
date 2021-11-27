@@ -10,7 +10,9 @@ const Hero = () => {
                     Mi ultricies tortor a magna nisi. At mi suspendisse ut et, id ornare.</p>
                 <Button filled="true"/>
             </div>
-            <Image src='/hero.svg' width='687px' height='375px' className="hero-img"/>
+            <div className="hero-img">
+                <Image src='/hero.svg' width='687px' height='375px' className="hero-img"/>
+            </div>
         </div>
     );
 };

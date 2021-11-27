@@ -5,7 +5,9 @@ import Bullet from "../partials/Bullet";
 const Join = () => {
     return (
         <div className="join">
-            <Image src="/join.svg" height="856px" width="508px"/>
+            <div className="join-img">
+                <Image src="/join.svg" height="856px" width="508px"/>
+            </div>
             <div className="join-right">
                 <h2 className="join-heading">The reason you should join us</h2>
                 <ul className="join-bullets">
