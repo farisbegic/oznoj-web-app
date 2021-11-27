@@ -16,7 +16,7 @@ const Header = () => {
             <ul className="nav-menu" onClick={handleClick} click={click} style={{left: `${click ? '0' : '100%'}`}}>
                 <Link href="/"><a className="nav-link">Home</a></Link>
                 <Link href="/about"><a className="nav-link">About</a></Link>
-                <Link href="/contact"><a className="nav-link">Contact</a></Link>
+                <Link href="/supplements"><a className="nav-link">Supplements</a></Link>
                 <Link href="/recipes"><a className="nav-link">Recipes</a></Link>
                 <Button filled='false' />
             </ul>
