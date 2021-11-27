@@ -1,6 +1,6 @@
 var axios = require('axios').default;
 
-export const funkcija = async (imejela) => {
+export const getRecipes = async (imejela) => {
 	var options = {
 		method: 'GET',
 		url: `https://recipesapi2.p.rapidapi.com/recipes/${imejela}`,
