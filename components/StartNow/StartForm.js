@@ -8,7 +8,13 @@ import {
 	Button,
 } from '@material-ui/core';
 import ResultData from './ResultData';
-import { getBMIndex, getMacros } from '../../api/calculator';
+import {
+	getBMIndex,
+	getMacros,
+	getDailyCalorieReq,
+	getIdealWeight,
+	getBfpercentage,
+} from '../../api/calculator';
 
 const StartForm = () => {
 	const [firstName, setFirstName] = useState('');
@@ -24,7 +30,9 @@ const StartForm = () => {
 	const [hip, setHip] = useState('');
 	const [BMIIndex, setBMIIndex] = useState({});
 	const [macros, setMacros] = useState({});
-
+	const [dailyReq, setdailyReq] = useState({});
+	const [idealWeight, setIdealWeight] = useState({});
+	const [bfPer, setBfPer] = useState({});
 	/*
         a - age 
         w - weight 
@@ -32,8 +40,9 @@ const StartForm = () => {
         ge - gender 
         ac - activitylevel
         go - goal
-        
-
+        ne - neck
+        wa - waist
+        hi - hip
     */
 
 	const handleSubmit = async (a, w, h, ge, ac, go) => {
@@ -41,7 +50,16 @@ const StartForm = () => {
 		setBMIIndex(variable1.data.data);
 
 		let variable2 = await getMacros(a, ge, h, w, ac, go);
-		setMacros(variable2.data.data.data);
+		setMacros(variable2.data.data);
+
+		let variable3 = await getDailyCalorieReq(a, ge, h, w, ac);
+		setdailyReq(variable3);
+
+		let variable4 = await getIdealWeight(ge, h);
+		setIdealWeight(variable4);
+
+		let variable5 = await getBfpercentage(a, ge, w, h, ne, wa, hi);
+		setBfPer(variable5);
 	};
 
 	return (
@@ -181,7 +199,10 @@ const StartForm = () => {
 											height,
 											gender,
 											activityLevel,
-											goal
+											goal,
+											neck,
+											waist,
+											hip
 										)
 									}
 									type='submit'
@@ -196,7 +217,13 @@ const StartForm = () => {
 					</div>
 				</CardContent>
 			</Card>
-			<ResultData BMIIndex={BMIIndex} macros={macros} />
+			<ResultData
+				BMIIndex={BMIIndex}
+				macros={macros}
+				dailyCalories={dailyReq}
+				idealWeight={idealWeight}
+				bfPer={bfPer}
+			/>
 		</div>
 	);
 };

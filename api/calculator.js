@@ -49,3 +49,85 @@ export const getMacros = async (
 		console.log(err);
 	}
 };
+
+export const getDailyCalorieReq = async (
+	age,
+	gender,
+	height,
+	weight,
+	activitylevel
+) => {
+	var options = {
+		method: 'GET',
+		url: 'https://fitness-calculator.p.rapidapi.com/dailycalorie',
+		params: {
+			age: `${age}`,
+			gender: `${gender}`,
+			height: `${height}`,
+			weight: `${weight}`,
+			activitylevel: `${activitylevel}`,
+		},
+		headers: {
+			'x-rapidapi-host': 'fitness-calculator.p.rapidapi.com',
+			'x-rapidapi-key': 'aca7a886e9mshee0f8c5d443f65bp1141abjsn4d18f3853312',
+		},
+	};
+
+	try {
+		return await axios.request(options);
+	} catch (err) {
+		console.log(err);
+	}
+};
+
+export const getIdealWeight = async ({ gender, height }) => {
+	var options = {
+		method: 'GET',
+		url: 'https://fitness-calculator.p.rapidapi.com/idealweight',
+		params: { gender: `${gender}`, height: `${height}` },
+		headers: {
+			'x-rapidapi-host': 'fitness-calculator.p.rapidapi.com',
+			'x-rapidapi-key': 'aca7a886e9mshee0f8c5d443f65bp1141abjsn4d18f3853312',
+		},
+	};
+
+	try {
+		return await axios.request(options);
+	} catch (err) {
+		console.log(err);
+	}
+};
+
+export const getBfpercentage = async (
+	age,
+	gender,
+	weight,
+	height,
+	neck,
+	waist,
+	hip
+) => {
+	var options = {
+		method: 'GET',
+		url: 'https://fitness-calculator.p.rapidapi.com/bodyfat',
+		params: {
+			age: `${age}`,
+			gender: `${gender}`,
+			weight: `${weight}`,
+			height: `${height}`,
+			neck: `${neck}`,
+			waist: `${waist}`,
+			hip: `${hip}`,
+		},
+		headers: {
+			'x-rapidapi-host': 'fitness-calculator.p.rapidapi.com',
+			'x-rapidapi-key': 'aca7a886e9mshee0f8c5d443f65bp1141abjsn4d18f3853312',
+		},
+	};
+
+	try {
+		return await axios.request(options);
+	} catch (err) {
+		console.log(err);
+	}
+};

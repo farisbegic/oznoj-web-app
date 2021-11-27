@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-const ResultData = ({ BMIIndex, macros }) => {
+const ResultData = ({
+	BMIIndex,
+	macros,
+	dailyCalories,
+	idealWeight,
+	bfPer,
+}) => {
 	console.log(macros);
 	return (
 		<div>
@@ -10,7 +16,7 @@ const ResultData = ({ BMIIndex, macros }) => {
 				Please note that the healthy BMI range is in a range:{' '}
 				{BMIIndex.healthy_bmi_range}
 			</h4>
-			<h4></h4>
+			<h4>{console.log(macros.balanced)}</h4>
 		</div>
 	);
 };
