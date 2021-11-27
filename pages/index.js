@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { data } from '../api/getExcercises';
 
 export default function Home() {
-	return <div>{}</div>;
+	return <div>{console.log(exec)}</div>;
 }
