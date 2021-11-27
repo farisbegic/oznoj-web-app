@@ -1,4 +1,5 @@
 .services {
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,6 +22,7 @@
 }
 
 .services-header-text {
+  text-align: end;
   font-family: Hind, serif;
   font-weight: normal;
   font-size: 15px;

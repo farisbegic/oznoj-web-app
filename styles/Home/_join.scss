@@ -1,0 +1,38 @@
+.join {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 150px;
+}
+
+.join-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+
+.join-heading {
+  padding-bottom: 40px;
+  text-align: end;
+  font-family: Montserrat, serif;
+  font-weight: 600;
+  font-size: 55px;
+  color: $black;
+}
+
+.join-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.bullet-text {
+  font-family: Hind, serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: $black;
+  padding-left: 10px;
+}
