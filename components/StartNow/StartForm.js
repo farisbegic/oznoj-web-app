@@ -25,9 +25,23 @@ const StartForm = () => {
 	const [BMIIndex, setBMIIndex] = useState({});
 	const [macros, setMacros] = useState({});
 
-	const handleSubmit = async (a, w, h) => {
+	/*
+        a - age 
+        w - weight 
+        h - height 
+        ge - gender 
+        ac - activitylevel
+        go - goal
+        
+
+    */
+
+	const handleSubmit = async (a, w, h, ge, ac, go) => {
 		let variable1 = await getBMIndex(a, w, h);
 		setBMIIndex(variable1.data.data);
+
+		let variable2 = await getMacros(a, ge, h, w, ac, go);
+		setMacros(variable2.data.data.data);
 	};
 
 	return (
@@ -120,8 +134,8 @@ const StartForm = () => {
 							<Grid xs={12} item>
 								<TextField
 									onChange={(e) => setGoal(e.target.value)}
-									type='number'
-									placeholder='Goal'
+									type='text'
+									placeholder='Goal : maintain, mildlose, weightlose, extremelose, mildgain, weightgain, extremegain '
 									variant='outlined'
 									fullWidth
 									required
@@ -160,7 +174,16 @@ const StartForm = () => {
 
 							<Grid xs={12} item>
 								<Button
-									onClick={() => handleSubmit(age, weight, height)}
+									onClick={() =>
+										handleSubmit(
+											age,
+											weight,
+											height,
+											gender,
+											activityLevel,
+											goal
+										)
+									}
 									type='submit'
 									variant='contained'
 									color='primary'
@@ -173,7 +196,7 @@ const StartForm = () => {
 					</div>
 				</CardContent>
 			</Card>
-			<ResultData BMIIndex={BMIIndex} />
+			<ResultData BMIIndex={BMIIndex} macros={macros} />
 		</div>
 	);
 };
