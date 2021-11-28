@@ -8,10 +8,10 @@ const ResultData = ({
 	idealWeight,
 	bfPer,
 }) => {
-	console.log(dailyCalories);
 	if (!macros) return 'Loading...';
 
 	const kalorije = dailyCalories?.data?.data?.goals;
+	const bodifat = bfPer?.data?.data;
 
 	return (
 		<div className='sexy_data'>
@@ -108,6 +108,26 @@ const ResultData = ({
 					</h4>
 					<h4>Calories: {kalorije?.['Extreme weight gain']?.['calory']}</h4>
 					<h4>Not recommended for most people</h4>
+				</div>
+			</div>
+
+			<h2>Body Weight Fat Percentage</h2>
+			<div className='sexy_data_cards'>
+				<div className='sexy_data_card'>
+					<h3>Body Fat (BMI method)</h3>
+					<h1>{bodifat?.['Body Fat (BMI method)']}%</h1>
+				</div>
+				<div className='sexy_data_card'>
+					<h3>Body Fat (U.S. Navy Method)</h3>
+					<h1>{bodifat?.['Body Fat (U.S. Navy Method)']}</h1>
+				</div>
+				<div className='sexy_data_card'>
+					<h3>Body Fat Mass</h3>
+					<h1>{bodifat?.['Body Fat Mass']} kg</h1>
+				</div>
+				<div className='sexy_data_card'>
+					<h3>Lean Body Mass</h3>
+					<h1>{bodifat?.['Lean Body Mass']} kg</h1>
 				</div>
 			</div>
 		</div>
