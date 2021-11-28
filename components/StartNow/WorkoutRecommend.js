@@ -30,7 +30,7 @@ const WorkoutRecommend = () => {
 								used to make significant progress with beginners. It is going to
 								take you {aboutTheProgram.programDuration} to complete this
 								program doing it {aboutTheProgram.daysperWeek} days per week,{' '}
-								{aboutTheProgram.timePerWorkout} per workout.
+								{aboutTheProgram.timePerWorkout} per workout
 							</Typography>
 							<Link href='/workouts'>
 								<span style={{ fontSize: '30px', cursor: 'pointer' }}>
