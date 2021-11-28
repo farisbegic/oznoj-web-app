@@ -6,6 +6,8 @@ import {
 	Grid,
 	TextField,
 	Button,
+	Select,
+	MenuItem,
 } from '@material-ui/core';
 import ResultData from './ResultData';
 import {
@@ -143,14 +145,20 @@ const StartForm = () => {
 								/>
 							</Grid>
 							<Grid xs={12} sm={6} item>
-								<TextField
-									onChange={(e) => setActivityLevel(e.target.value)}
-									type='number'
-									placeholder='Activity Level'
-									variant='outlined'
+								<Select
 									fullWidth
-									required
-								/>
+									labelId='demo-simple-select-label'
+									id='demo-simple-select'
+									value={age}
+									label='Level'
+									onChange={(e) => setActivityLevel(e.target.value)}
+								>
+									<MenuItem value={1}>Level 1</MenuItem>
+									<MenuItem value={2}>Level 2</MenuItem>
+									<MenuItem value={3}>Level 3</MenuItem>
+									<MenuItem value={4}>Level 4</MenuItem>
+									<MenuItem value={4}>Level 5</MenuItem>
+								</Select>
 							</Grid>
 							<Grid xs={12} sm={6} item>
 								<TextField
