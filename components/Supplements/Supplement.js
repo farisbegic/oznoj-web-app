@@ -17,7 +17,6 @@ const Supplement = () => {
                 <div className="supplement-information">
                     <h1 className="supplement-title">{supplement[0].name}</h1>
                     <p className="supplement-description">{supplement[0].desc}</p>
-
                 </div>
             </div>
         </div>
