@@ -78,7 +78,7 @@ const StartForm = () => {
 						variant='body2'
 						component='p'
 					>
-						We guarantee complete confidentiality of this data. It won't be used
+						We guarantee complete confidentiality of this data. It wont be used
 						for any marketing purposes but strictly to make you a meal and a
 						workout plan.
 					</Typography>

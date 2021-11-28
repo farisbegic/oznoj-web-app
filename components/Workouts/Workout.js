@@ -14,8 +14,9 @@ export default function ControlledAccordions(props) {
 
 	return (
 		<div className='workout'>
-			{props.workout?.map((day) => (
+			{props.workout?.map((day, index) => (
 				<Accordion
+					key={index}
 					className='accordion'
 					expanded={expanded === 'panel1'}
 					onChange={handleChange('panel1')}
@@ -40,8 +41,8 @@ export default function ControlledAccordions(props) {
 									<th>Sets</th>
 									<th>Reps</th>
 								</tr>
-								{day.excersises.map((exercise) => (
-									<tr>
+								{day.excersises.map((exercise, index) => (
+									<tr key={index}>
 										<td>{exercise.excersiseName}</td>
 										<td>{exercise.sets}</td>
 										<td>{exercise.reps}</td>
