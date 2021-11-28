@@ -5,11 +5,13 @@ import Join from '../components/Home/Join';
 import Footer from '../components/partials/Footer';
 import React from 'react';
 import Head from 'next/head';
+import BlueCircle from "../components/partials/BlueCircle";
 
 export default function Home() {
 	return (
 		<>
 			<Header />
+			<BlueCircle right="-200px" top="-100px"/>
 			<Hero
 				heroTitle='Make health your priority!'
 				heroText="Exercise helps people lose weight and lower the risk of some diseases.
@@ -20,6 +22,7 @@ export default function Home() {
 				heroImg='/hero.svg'
 			/>
 			<Services />
+			<BlueCircle right="1300px" />
 			<Join />
 			<Footer />
 		</>

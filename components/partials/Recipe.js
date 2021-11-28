@@ -5,9 +5,10 @@ const Recipe = (props) => {
 	return (
 		<div className='recipe'>
 			<div className='recipe-card'>
-				{/*eslint-disable-next-line*/}
-				<img alt='sups' src={`${props.image}`} className='recipe-image' />
-				<div className='recipe-information'>
+				<div className="recipe-image">
+					<img alt='sups' src={`${props.image}`} />
+				</div>
+				<div className="recipe-information">
 					<h5 className='recipe-card-heading'>{props.name}</h5>
 					<ul className='recipe-nutrients'>
 						<li className='recipe-nutrient'>

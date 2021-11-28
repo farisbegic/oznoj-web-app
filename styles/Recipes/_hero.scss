@@ -29,3 +29,29 @@
   text-align: end;
   width: 50%;
 }
+
+@media screen and (max-width: 1050px) {
+  .recipe-hero-heading {
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+  }
+  .recipe-hero-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .recipes-hero {
+    margin: 0;
+  }
+  .recipe-hero {
+    justify-content: center;
+  }
+  .recipe-hero-text{
+    display: none;
+  }
+  .recipes {
+    padding: 0 150px;
+  }
+}
