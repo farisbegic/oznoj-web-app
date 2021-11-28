@@ -14,8 +14,10 @@ const SingleWorkout = () => {
     return (
         <>
             <Header />
-            <Summary workoutSummary={workoutData[0]?.aboutTheProgram}/>
-            <Workout workout={workoutData[0]?.programData}/>
+            <div className="individual-workout-hero">
+                <Summary workoutSummary={workoutData[0]?.aboutTheProgram}/>
+                <Workout workout={workoutData[0]?.programData}/>
+            </div>
             <Footer />
         </>
     );

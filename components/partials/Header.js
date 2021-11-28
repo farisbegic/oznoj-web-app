@@ -8,7 +8,7 @@ const Header = () => {
 	return (
 		<header>
 			<Link href='/'>
-				<a className='logo'>Sweat</a>
+				<a className='logo'>Oznoj</a>
 			</Link>
 			<div className='hamburger-icon' onClick={handleClick}>
 				{click ? <FaTimes /> : <FaBars />}
