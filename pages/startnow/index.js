@@ -4,7 +4,7 @@ import StartForm from '../../components/StartNow/StartForm';
 
 const startnow = () => {
 	return (
-		<div>
+		<>
 			<Hero
 				heroTitle="Let's get you in shape!"
 				heroText='You are about to get the best meal & workout plan of your life!'
@@ -12,7 +12,7 @@ const startnow = () => {
 				noButton='true'
 			/>
 			<StartForm />
-		</div>
+		</>
 	);
 };
 

@@ -64,7 +64,7 @@ const StartForm = () => {
 
 	return (
 		<div>
-			<Card style={{ maxWidth: '650px', margin: '10rem auto' }}>
+			<Card style={{ maxWidth: '750px', margin: '10rem auto' }}>
 				<CardContent gutterBottom>
 					<Typography variant='h4'>
 						We are gonna need some data first
@@ -109,7 +109,7 @@ const StartForm = () => {
 									required
 								/>
 							</Grid>
-							<Grid xs={12} item>
+							<Grid xs={12} sm={6} item>
 								<TextField
 									onChange={(e) => setWeight(e.target.value)}
 									type='number'
@@ -119,7 +119,7 @@ const StartForm = () => {
 									required
 								/>
 							</Grid>
-							<Grid xs={12} item>
+							<Grid xs={12} sm={6} item>
 								<TextField
 									onChange={(e) => setHeight(e.target.value)}
 									type='number'
@@ -139,7 +139,7 @@ const StartForm = () => {
 									required
 								/>
 							</Grid>
-							<Grid xs={12} item>
+							<Grid xs={12} sm={6} item>
 								<TextField
 									onChange={(e) => setActivityLevel(e.target.value)}
 									type='number'
@@ -149,7 +149,7 @@ const StartForm = () => {
 									required
 								/>
 							</Grid>
-							<Grid xs={12} item>
+							<Grid xs={12} sm={6} item>
 								<TextField
 									onChange={(e) => setGoal(e.target.value)}
 									type='text'
@@ -159,7 +159,7 @@ const StartForm = () => {
 									required
 								/>
 							</Grid>
-							<Grid xs={12} item>
+							<Grid xs={12} item sm={6}>
 								<TextField
 									onChange={(e) => setNeck(e.target.value)}
 									type='number'
@@ -169,7 +169,7 @@ const StartForm = () => {
 									required
 								/>
 							</Grid>
-							<Grid xs={12} item>
+							<Grid xs={12} item sm={6}>
 								<TextField
 									onChange={(e) => setWaist(e.target.value)}
 									type='number'

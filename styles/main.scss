@@ -4,25 +4,20 @@
 // global styles
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#__next {
-  width: fit-content;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 // colors
 
-$blue: #7C9DF3;
+$blue: #7c9df3;
 $light-blue: rgba(124, 157, 243, 0.3);
 $black: #000;
 $white: #fff;
 $grey: rgba(178, 152, 152, 1);
 
-
-@import "./partials/all";
-@import "./Home/all";
-@import "./Supplements/all";
-@import "./Recipes/all";
+@import './partials/all';
+@import './Home/all';
+@import './Supplements/all';
+@import './Recipes/all';
