@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../../components/Home/Hero';
 import StartForm from '../../components/StartNow/StartForm';
-
+import Footer from '../../components/partials/Footer';
 const startnow = () => {
 	return (
 		<>
@@ -11,7 +11,10 @@ const startnow = () => {
 				heroImg='/hero.svg'
 				noButton='true'
 			/>
-			<StartForm />
+			<StartForm /> <br /> <br />
+			<br />
+			<br />
+			<Footer />
 		</>
 	);
 };
