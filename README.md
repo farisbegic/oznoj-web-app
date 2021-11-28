@@ -8,15 +8,13 @@ Bit Punks are young perspective assembly of developers and designers coming from
 
 # How to run ?
 
-- git clone this repo
-- cd to root directory
-- npm install to install all requirements
-- npm run dev
-- Happy testing :D
+- Install Node.js
+- Clone this repository using 'git clone'
+- Change your path to this directory
+- Install all dependencies usint 'npm install'
+- Run the commans 'npm run dev'
 
 ## This is an alpha version of our product
 
 - This project is a proof of concept. We are aware of majority of fitness apps out there but none strives for excellene as much as we do. We want to make fitness
   free for all those who really need it. We want to make this web app accessible to anyone and help everyone achieve healthy, realistic results.
-
-- Hope you like it :D
