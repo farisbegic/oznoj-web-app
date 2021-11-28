@@ -15,6 +15,9 @@ import {
 	getIdealWeight,
 	getBfpercentage,
 } from '../../api/calculator';
+import WorkoutRecommend from './WorkoutRecommend';
+import MealPlanRecommend from './MealPlanRecommend';
+import SuppsRecommend from './SuppsRecommend';
 
 const StartForm = () => {
 	const [firstName, setFirstName] = useState('');
@@ -224,6 +227,9 @@ const StartForm = () => {
 				idealWeight={idealWeight}
 				bfPer={bfPer}
 			/>
+			<WorkoutRecommend />
+			<MealPlanRecommend />
+			<SuppsRecommend />
 		</div>
 	);
 };
