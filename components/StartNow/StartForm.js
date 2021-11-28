@@ -227,6 +227,7 @@ const StartForm = () => {
 				idealWeight={idealWeight}
 				bfPer={bfPer}
 			/>
+
 			<WorkoutRecommend />
 			<MealPlanRecommend />
 			<SuppsRecommend />
