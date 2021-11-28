@@ -7,8 +7,10 @@ const Product = (props) => {
 			<div className='product-card'>
 				{/*eslint-disable-next-line*/}
 				<img alt='sups' src={props.img} width='192px' height='171px' />
-				<h5 className='product-card-heading'>{props.name}</h5>
-				<p className='product-card-text'>{props.foodSources}</p>
+				<div className="supplement-product-info">
+					<h5 className='product-card-heading'>{props.name}</h5>
+					<p className='product-card-text'>{props.foodSources}</p>
+				</div>
 				<Link href={`/supplements/${props.id}`}>
 					<a className='supplement-link'>Read More</a>
 				</Link>

@@ -44,6 +44,10 @@
   text-align: end;
 }
 
+.supplement-img {
+  height: 500px;
+}
+
 .supplement-description {
   font-family: Hind, serif;
   font-weight: normal;
@@ -51,4 +55,51 @@
   color: $grey;
   text-align: end;
   padding: 10px;
+}
+
+@media screen and (max-width: 1200px){
+  .supplement-img {
+    height: 300px;
+  }
+  .supplement-title {
+    font-size: 50px;
+  }
+  .supplement-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 930px){
+  .path {
+    font-size: 15px;
+  }
+  .supplement-img {
+    height: 200px;
+  }
+  .vertical-line {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .supplement {
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .path {
+    text-align: center;
+    width: 100%;
+  }
+  .supplement-details {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .supplement-title, .supplement-description {
+    text-align: center;
+  }
 }

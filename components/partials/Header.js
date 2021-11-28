@@ -34,7 +34,6 @@ const Header = () => {
 				<Link href='/workouts'>
 					<a className='nav-link'>Workouts</a>
 				</Link>
-
 				<Button url='/startnow' filled='false' />
 			</ul>
 		</header>
