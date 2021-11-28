@@ -57,6 +57,12 @@ export const getDailyCalorieReq = async (
 	weight,
 	activitylevel
 ) => {
+	var setActicityLevel;
+	if (activitylevel === '1') setActicityLevel = 'level_1';
+	else if (activitylevel === '2') setActicityLevel = 'level_2';
+	else if (activitylevel === '3') setActicityLevel = 'level_3';
+	else if (activitylevel === '4') setActicityLevel = 'level_4';
+	else if (activitylevel === '5') setActicityLevel = 'level_5';
 	var options = {
 		method: 'GET',
 		url: 'https://fitness-calculator.p.rapidapi.com/dailycalorie',
@@ -65,7 +71,7 @@ export const getDailyCalorieReq = async (
 			gender: `${gender}`,
 			height: `${height}`,
 			weight: `${weight}`,
-			activitylevel: `${activitylevel}`,
+			activitylevel: `${setActicityLevel}`,
 		},
 		headers: {
 			'x-rapidapi-host': 'fitness-calculator.p.rapidapi.com',

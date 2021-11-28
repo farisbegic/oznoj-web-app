@@ -59,10 +59,17 @@ const ResultData = ({
 				</div>
 			</div>
 			<h2>Your Daily Calorie Intake</h2>
-			<h1>BMR: {macros?.calorie?.toFixed(2)}</h1>
+			<h1>BMR: {dailyCalories?.data?.data?.BMR}</h1>
+			<h3>
+				Maintain Weight :{' '}
+				{dailyCalories?.data?.data?.goals?.['maintain weight']}kcal
+			</h3>
 			<div className='sexy_data_cards'>
 				<div className='sexy_data_card'>
-					<h3>Balanced Intake</h3>
+					<h3>
+						Maintain Weight :{' '}
+						{dailyCalories?.data?.data?.goals?.['maintain weight']}kcal
+					</h3>
 					<h4>Protein: {macros?.balanced?.protein?.toFixed(2)}g</h4>
 					<h4>Fat: {macros?.balanced?.fat?.toFixed(2)}g</h4>
 					<h4>Carbs: {macros?.balanced?.carbs?.toFixed(2)}g</h4>
