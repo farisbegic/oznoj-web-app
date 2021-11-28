@@ -13,7 +13,7 @@ const Recipe = (props) => {
 						<li className="recipe-nutrient"><strong>Carbs:</strong> {props.carbohydrates.toFixed(0)}g</li>
 						<li className="recipe-nutrient"><strong>Fat:</strong> {props.fat.toFixed(0)}g</li>
 					</ul>
-					<Link href={`/supplements/${props.id}`}>
+					<Link href={`${props.url}`}>
 						<a className='supplement-link'>Read More</a>
 					</Link>
 				</div>

@@ -14,7 +14,7 @@ const Recipes = () => {
 	return (
 		<div className='recipes'>
 			{recept.data ? (recept.data.hits.map((recipe) => (
-				<Recipe image={recipe.recipe.image} name={recipe.recipe.label} protein={recipe.recipe.totalNutrients.PROCNT.quantity} carbohydrates={recipe.recipe.totalNutrients.CHOCDF.quantity} fat={recipe.recipe.totalNutrients.FAT.quantity} />
+				<Recipe image={recipe.recipe.image} name={recipe.recipe.label} protein={recipe.recipe.totalNutrients.PROCNT.quantity} carbohydrates={recipe.recipe.totalNutrients.CHOCDF.quantity} fat={recipe.recipe.totalNutrients.FAT.quantity} url={recipe.recipe.url}/>
 			))) : ''}
 		</div>
 	);
