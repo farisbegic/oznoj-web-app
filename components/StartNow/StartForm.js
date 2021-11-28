@@ -45,7 +45,7 @@ const StartForm = () => {
         hi - hip
     */
 
-	const handleSubmit = async (a, w, h, ge, ac, go) => {
+	const handleSubmit = async (a, w, h, ge, ac, go, ne, wa, hi) => {
 		let variable1 = await getBMIndex(a, w, h);
 		setBMIIndex(variable1.data.data);
 

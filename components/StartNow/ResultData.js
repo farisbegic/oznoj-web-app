@@ -8,8 +8,11 @@ const ResultData = ({
 	bfPer,
 }) => {
 	console.log(macros);
+	console.log(dailyCalories);
+	console.log(idealWeight);
+	console.log(bfPer);
 	return (
-		<div>
+		<div className='sexy_data'>
 			<h4>Your BMI Index is : {BMIIndex.bmi}</h4>
 			<h4> Your health status according to your BMI is: {BMIIndex.health} </h4>
 			<h4>
