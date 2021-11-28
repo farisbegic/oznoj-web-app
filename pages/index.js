@@ -7,12 +7,8 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function Home() {
-
 	return (
 		<>
-			<Head>
-				<title>Sweat</title>
-			</Head>
 			<Header />
 			<Hero
 				heroTitle='Make health your priority!'

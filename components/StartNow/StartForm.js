@@ -36,6 +36,7 @@ const StartForm = () => {
 	const [dailyReq, setdailyReq] = useState({});
 	const [idealWeight, setIdealWeight] = useState({});
 	const [bfPer, setBfPer] = useState({});
+	const [workoutExists, setWorkoutExists] = useState('true');
 	/*
         a - age 
         w - weight 
@@ -48,7 +49,7 @@ const StartForm = () => {
         hi - hip
     */
 
-	const handleSubmit = async (a, w, h, ge, ac, go, ne, wa, hi) => {
+	const handleSubmit = async (a, w, h, ge, ac, go, ne, wa, hi, we) => {
 		let variable1 = await getBMIndex(a, w, h);
 		setBMIIndex(variable1.data.data);
 
@@ -63,6 +64,8 @@ const StartForm = () => {
 
 		let variable5 = await getBfpercentage(a, ge, w, h, ne, wa, hi);
 		setBfPer(variable5);
+
+		setWorkoutExists('true');
 	};
 
 	return (
@@ -205,7 +208,8 @@ const StartForm = () => {
 											goal,
 											neck,
 											waist,
-											hip
+											hip,
+											workoutExists
 										)
 									}
 									type='submit'
@@ -226,11 +230,18 @@ const StartForm = () => {
 				dailyCalories={dailyReq}
 				idealWeight={idealWeight}
 				bfPer={bfPer}
+				workoutExists={workoutExists}
 			/>
 
-			<WorkoutRecommend />
-			<MealPlanRecommend />
-			<SuppsRecommend />
+			{workoutExists === 'true' ? (
+				<>
+					<WorkoutRecommend />
+					<MealPlanRecommend />
+					<SuppsRecommend />
+				</>
+			) : (
+				<></>
+			)}
 		</div>
 	);
 };
