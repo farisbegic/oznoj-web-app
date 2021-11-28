@@ -7,7 +7,6 @@ const Supplement = () => {
     const router = useRouter();
     const { query } = router;
     const supplement = supplementData.filter((supplement) => supplement.id === query.slug);
-    console.log(supplement[0]);
     return (
         <div className="supplement">
             <h4 className="path"><Link href="/"><a className="path">Home</a></Link> / <Link href="/supplements"><a className="path">Supplements</a></Link> / <span className="path-slug">{supplement[0].name}</span></h4>

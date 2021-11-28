@@ -19,8 +19,9 @@ export const workouts = [
 				'Pre-workout',
 			],
 		},
-		programData: {
-			day1: {
+		programData: [
+			{
+				day: 'Day 1',
 				targetMuscleGroup: 'Upper Body',
 				trainingType: 'Power',
 				description:
@@ -28,9 +29,7 @@ export const workouts = [
 				excersises: [
 					{ excersiseName: 'Barbell Bench Press', sets: '3-4', reps: '3-5' },
 					{
-						excersiseName: 'Incline Dumbell Bench Press',
-						sets: '3-4',
-						reps: '6-10',
+						excersiseName: 'Incline Dumbell Bench Press', sets: '3-4', reps: '6-10',
 					},
 					{ excersiseName: 'Bent Over Row', sets: '3-4', reps: '3-5' },
 					{ excersiseName: 'Lat Pull Down', sets: '3-4', reps: '6-10' },
@@ -39,7 +38,8 @@ export const workouts = [
 					{ excersiseName: 'Skullcrusher', sets: '2-3', reps: '6-10' },
 				],
 			},
-			day2: {
+			{
+				day: 'Day 2',
 				targetMuscleGroup: 'Lower Body',
 				trainingType: 'Power',
 				excersises: [
@@ -54,7 +54,8 @@ export const workouts = [
 					{ excersiseName: 'Calf Excersise', sets: '4', reps: '6-10' },
 				],
 			},
-			day4: {
+			{
+				day: 'Day 3',
 				targetMuscleGroup: 'Upper Body',
 				trainingType: 'Hypertrophy',
 				excersises: [
@@ -83,7 +84,8 @@ export const workouts = [
 					},
 				],
 			},
-			day5: {
+			{
+				day: 'Day 4',
 				targetMuscleGroup: 'Lower Body',
 				trainingType: 'Hypertrophy',
 				excersises: [
@@ -107,6 +109,6 @@ export const workouts = [
 					},
 				],
 			},
-		},
+		],
 	},
 ];
