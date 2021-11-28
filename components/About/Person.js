@@ -5,11 +5,13 @@ const Person = (props) => {
 		<div className='person'>
 			{/*eslint-disable-next-line*/}
 			<img alt='person image' className='person-image' src={props.img} />
-			<h4 className='name'>{props.name}</h4>
-			<h6 className='role'>{props.role}</h6>
-			{/*eslint-disable-next-line*/}
-			<img alt='person image' src='./quote.png' className='quotemark' />
-			<p className='quote'>{props.quote}</p>
+			<div className="upper-detail">
+				<h4 className='name'>{props.name}</h4>
+				<h6 className='role'>{props.role}</h6>
+				{/*eslint-disable-next-line*/}
+				<img alt='person image' src='./quote.png' className='quotemark' />
+				<p className='quote'>{props.quote}</p>
+			</div>
 			<div className='person-details'>
 				<p className='detail'>
 					Age: <span className='detail-value'>{props.age}</span>
