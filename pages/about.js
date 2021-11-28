@@ -1,20 +1,18 @@
 import React from 'react';
-import Hero from '../components/Home/Hero';
-import Join from '../components/Home/Join';
-import Services from '../components/Home/Services';
-import Footer from '../components/partials/Footer';
-import Header from '../components/partials/Header';
-
-function About() {
-	return (
-		<>
+import Header from "../components/partials/Header";
+import Footer from "../components/partials/Footer";
+import {aboutData} from "../api/about";
+import Person from '../components/About/Person'
+const About = () => {
+    return (
+        <>
 			<Header />
-			<Hero />
-			<Services />
-			<Join />
+            <div className="our-team">
+                {aboutData.map((person) => (<Person {...person}/>))}
+            </div>
 			<Footer />
-		</>
-	);
-}
+        </>
+    );
+};
 
 export default About;

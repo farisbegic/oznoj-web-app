@@ -7,7 +7,6 @@ import Loader from "react-loader-spinner";
 
 const Recipes = () => {
 	const [recept, setRecept] = useState([]);
-	const [load, setLoad] = useState(false);
 
 	useEffect(async () => {
 		setRecept(await funkcija());
