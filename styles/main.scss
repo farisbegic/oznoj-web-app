@@ -12,12 +12,10 @@ $grey: rgba(178, 152, 152, 1);
 // global styles
 
 * {
+	font-family: Hind;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-#__next {
 }
 
 @import './partials/all';
@@ -25,5 +23,5 @@ $grey: rgba(178, 152, 152, 1);
 @import './Supplements/all';
 @import './Recipes/all';
 @import './SexyData/all';
-@import "./About/all";
-@import "./Workouts/all";
+@import './About/all';
+@import './Workouts/all';
