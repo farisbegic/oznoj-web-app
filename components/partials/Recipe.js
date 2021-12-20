@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Recipe = (props) => {
 	return (
 		<div className='recipe'>
 			<div className='recipe-card'>
 				<div className="recipe-image">
-					<img alt='sups' src={`${props.image}`} />
+					<Image alt='sups' src={`${props.image}`} />
 				</div>
 				<div className="recipe-information">
 					<h5 className='recipe-card-heading'>{props.name}</h5>

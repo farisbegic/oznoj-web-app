@@ -8,11 +8,8 @@ import Loader from 'react-loader-spinner';
 const Recipes = () => {
 	const [recept, setRecept] = useState([]);
 
-	{
-		/*eslint-disable-next-line*/
-	}
-	useEffect(async () => {
-		setRecept(await funkcija());
+	useEffect( () => {
+		setRecept(funkcija());
 	}, []);
 
 	return (

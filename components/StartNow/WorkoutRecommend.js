@@ -32,7 +32,7 @@ const WorkoutRecommend = () => {
 								program doing it {aboutTheProgram.daysperWeek} days per week,{' '}
 								{aboutTheProgram.timePerWorkout} per workout.
 							</Typography>
-							<Link href='/workouts'>
+							<Link href='/workouts' passHref>
 								<span style={{ fontSize: '30px', cursor: 'pointer' }}>
 									Read more
 								</span>
