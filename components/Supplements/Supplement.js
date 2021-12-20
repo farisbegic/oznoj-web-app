@@ -12,7 +12,9 @@ const Supplement = () => {
         <div className="supplement">
             <h4 className="path"><Link href="/"><a className="path">Home</a></Link> / <Link href="/supplements"><a className="path">Supplements</a></Link> / <span className="path-slug">{supplement[0]?.name}</span></h4>
             <div className="supplement-details">
-                <Image src={`${supplement[0]?.img}`} alt="" className="supplement-img"/>
+                <div className="supplement-img">
+                    <Image src={`${supplement[0]?.img}`} alt="supplement"/>
+                </div>
                 <div className="vertical-line"/>
                 <div className="supplement-information">
                     <h1 className="supplement-title">{supplement[0]?.name}</h1>
