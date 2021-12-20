@@ -1,6 +1,5 @@
-var axios = require('axios').default;
-
-export const funkcija = async () => {
+export const getRecipes = async () => {
+	var axios = require('axios').default;
 	var options = {
 		method: 'GET',
 		url: 'https://edamam-recipe-search.p.rapidapi.com/search',

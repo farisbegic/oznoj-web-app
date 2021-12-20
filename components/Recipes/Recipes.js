@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Product from '../partials/Product';
-import { supplementData } from '../../api/supplements';
-import { funkcija } from '../../api/getRecepies';
+import { getRecipes } from '../../api/getRecepies';
 import Recipe from '../partials/Recipe';
 import Loader from 'react-loader-spinner';
 
@@ -9,9 +7,8 @@ const Recipes = () => {
 	const [recept, setRecept] = useState([]);
 
 	useEffect( () => {
-		setRecept(funkcija());
+		setRecept(getRecipes);
 	}, []);
-
 	return (
 		<div className='recipes'>
 			{recept.data ? (

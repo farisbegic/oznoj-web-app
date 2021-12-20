@@ -6,15 +6,13 @@ import { supplementData } from "../../api/supplements";
 
 const Supplement = () => {
     const router = useRouter();
-    const { query } = router;
-    const supplement = supplementData.filter((supplement) => supplement.id === query.slug);
+    const { slug } = router.query;
+    const supplement = supplementData.filter((supplement) => supplement.id === slug);
     return (
         <div className="supplement">
             <h4 className="path"><Link href="/"><a className="path">Home</a></Link> / <Link href="/supplements"><a className="path">Supplements</a></Link> / <span className="path-slug">{supplement[0]?.name}</span></h4>
             <div className="supplement-details">
-                <div className="supplement-img">
-                    <Image src={`${supplement[0]?.img}`} alt="supplement"/>
-                </div>
+                <img src={supplement[0]?.img} alt="supplement" className="supplement-img"/>
                 <div className="vertical-line"/>
                 <div className="supplement-information">
                     <h1 className="supplement-title">{supplement[0]?.name}</h1>
