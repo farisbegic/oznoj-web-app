@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-This project was designed and developed by astounding members of BitPunks team.
+This project was designed and developed for Bicom Systems Hackathon 2021 by BitPunks Team.
 Bit Punks are young perspective assembly of developers and designers coming from BHFF. Perfectly balanced (as all things should be, lil Thanos reference here for MCU pals) mix of design, development and Genetic Engineering.
 (Asja Muharemović, Amna Spahić, Faris Begić, Zlatko Marjanović)
 
